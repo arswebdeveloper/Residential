@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
+  </head>
+ <body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-1">
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="projects.html">Our Projects</a>
+		<a href="Contactus.html">Contact Us</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+	
+	<a class="navbar-brand" href="index.html">
+    <img src="logo.png"  alt="">
+  </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <nav class="navbar navbar-light">
+  <form class="form-inline">
+  
+  
+  <select id="Location">
+              <option value="thane">Thane</option>
+            <option value="dombivli">Dombivli</option>
+            <option value="kalyan">Kalyan</option>
+            <option value="diva">Diva</option>
+			<option value="" disabled selected>Location</option>
+        </select>
+  
+  <!--
+  <button class="btn btn-light border-r dropdown-toggle rounded-0" type="button" data-toggle="dropdown">Thane
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Dombivli</a></li>
+      <li><a href="#">Kalyan</a></li>
+      <li><a href="#">Thane</a></li>
+      <li class="divider"></li>
+      <li><a href="#"> Mumbra</a></li>
+    </ul>
+  <button class="btn btn-light dropdown-toggle rounded-0" type="button" data-toggle="dropdown">Buy
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">1 RK</a></li>
+      <li><a href="#">Kalyan</a></li>
+      <li><a href="#">Thane</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Mumbra</a></li>
+    </ul>
+	-->
+	<select id="Location">
+            <option value="1 RK">1 RK</option>
+            <option value="1-2 BHK">1-2 BHK</option>
+            <option value="3 BHK">3 BHK</option>
+			<option value="Buy" disabled selected>Buy</option>
+        </select>
+	
+	
+	
+    <input class="form-control border-right-0 rounded-0" type="search" placeholder="Locality or Builder or Project Name" aria-label="Search">
+    <button class="btn btn-warning rounded-0 border-left-0 my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+  </form>
+</nav>
+      <div class="mt-2"><i class="fa fa-user-circle fa-2x"></i></div>
+	  <a href="c.html"<button type="button" class="btn btn-info rounded-0 mx-5">Post Property</button></a>
+	   <button class="btn btn-info rounded-0 btn-sm" data-target="#mymodel" data-toggle="modal">SIGN UP</button>
+    </ul>
+  </div>
+</nav>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.addressofchoice.com/aoc_assets/elevation/51399/1603799338_e1.jpeg" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+        <h5>Mythes Surrounding cruising in India</h5>
+        <p>The world cruises like no other,from ships the size of floating cities the elegant.</p>
+      </div>
+	</div>
+    <div class="carousel-item">
+      <img src="https://i.ytimg.com/vi/zFtfHPkRVI4/maxresdefault.jpg" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+        <h5>Mythes Surrounding cruising in India</h5>
+        <p>The world cruises like no other,from ships the size of floating cities the elegant.</p>
+      </div>
+	</div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/originals/bf/22/c8/bf22c80358857eeb6ac2e2eea4eaf946.jpg" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+        <h5>Mythes Surrounding cruising in India</h5>
+        <p>The world cruises like no other,from ships the size of floating cities the elegant.</p>
+      </div>
+	</div>
+	
+	<div class="carousel-item">
+      <img src="https://is1-3.housingcdn.com/012c1500/2d9a69e22687dd6e3bb059530b72aec8/v0/fs-large/nice_city-kalyan_phata-mumbai-nice_realty.jpeg" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+        <h5>Mythes Surrounding cruising in India</h5>
+        <p>The world cruises like no other,from ships the size of floating cities the elegant.</p>
+      </div>
+	</div>
+	
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="container py-5">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="overview-tab-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">OVERVIEW</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="location-tab" data-toggle="tab" href="#location" role="tab" aria-controls="location" aria-selected="false">LOCATION </a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="Buy-tab" data-toggle="tab" href="#Buy" role="tab" aria-controls="Buy" aria-selected="false">BUY</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="Rent-tab" data-toggle="tab" href="#rent" role="tab" aria-controls="rent" aria-selected="false">RENT</a>
+  </li>
+  
+  
+  
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+  <div class="row my-5">
+<div class="col-md-6 imagside1">
+<p>Gallery</p>
+</div>
+
+<div class="col-md-6">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex justify-content-between align-items-center">BHK 
+<span>1,2,3 BHK.</span>
+</li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">Area
+  <span>360-482 sq.ft.</span>
+
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">Possession
+    <span>Jun-2025(Ongoing)</span>
+
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">Price Range
+    <span>22.35L-70.35L Rs/</span>
+
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">Property Type
+    <span> Apartment
+	</span>
+
+  </li>
+  
+</ul>
+</div>
+</div>
+  </div>
+  <div class="tab-pane fade " id="location" role="tabpanel" aria-labelledby="location-tab">
+  <p>Location </p>
+<img src="https://www.google.com/maps/vt/data=HJWrXJ6IFixK-LZBfKH8SWSmkfNcsyTimJ-PgiDaNuaOrLni3YVWZD2uwgXF7h1HUULNi2doRR2tKv8i0YXV_hHFqkg-j1SHqAcbRr7E7bMzCeu5UCAy1Lmj-vqn5BCDtG-irUTWInbAzk_mYS1uxOJwobB2CDXgEAW87cqg-m37--j9rA5NqeFOKh3-1A"  class="d-block w-50" alt="...">
+
+  </div>
+  <div class="tab-pane fade" id="Buy" role="tabpanel" aria-labelledby="buy">
+<p>Properties for Sale Near Nice City</p>
+<div class="col-md-6">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex justify-content-between align-items-center">Unfurnished Furnished 2BHK Apartment
+Carpet Area(860 sq.ft)
+<span>Rs 52.99L</span>
+</li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">Unfurnished Furnished 1BHK Apartment
+Carpet Area (360-482 sq.ft.)
+  <span> Rs 31.56L</span>
+
+  </li>
+  <div class="row">
+
+  <div class="col-md-6 imagside2">
+	
+  </div>
+</div>
+  </div>
+  <div class="tab-pane fade" id="Rent" role="tabpanel" aria-labelledby="rent">
+  <p>Properties for Sale Near Nice City</p>
+  
+  <div class="col-md-6">
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex justify-content-between align-items-center">Not Furnished 1BHK Apartment for rent
+Carpet Area(860 sq.ft)
+<span>Rs 6,000</span>
+</li>
+  <li class="list-group-item d-flex justify-content-between align-items-center"> Semi Furnished 1BHK Apartment for rent
+Carpet Area (360-482 sq.ft.)
+  <span> Rs 7,000</span>
+
+  </li>
+  
+  
+  </div>
+  
+</div>
+
+<h1>Request For Call Back.</h1>
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+	
+	 <div class="form-group col-md-6">
+      <label for="inputPhone">Phone no</label>
+      <input type="phone" class="form-control" id="inputPhone">
+    </div>
+	
+	
+	
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Apartment type</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Residential, wing, and floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<section class="bg-dark text-white">
+	<div class="container-fluid pt-5">
+		<div class="row">
+			<div class="col-md-4 text-center border-right">
+				<img src="logo.png" class="w-50 my-3">
+				<h5>AL Mantasha Realty Brings Together a Team of Qualified Professionals in the Field of Management And Engineering.</h5>
+			</div>
+			<div class="col-md-4 border-right">
+				<div class='px-4'>
+					<h3 class="pb-3">Quick Links</h3>
+					<h5><a href="index.html">HOME</a></h5>
+					<h5><a href="About.html">About Us</a></h5>
+					<h5><a href="projects.html">Our Projects</a></h5>
+					<h5><a href="Contactus.html">Contact Us</a></h5>
+	
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class='px-3'>
+					<h3 class="pb-3">Keep In Touch</h3>
+					<h6 class="mb-3"><a href="https://goo.gl/maps/NdAGeFRsf4VDDtBn7"><i class="fa fa-location-arrow mr-3"></i></a>AL Mantasha Realty, Plot No. 102, At Kalsekar College Gate, Opposite Fatima Palace Building, Kausa, Mumbra Thane – 400612.</h6>
+					<h6 class="mb-3"><a href="tel:+918104537679"><i class="fa fa-phone mr-3"></i></a>+91 8104537679</h6>
+					<h6><a href="mailto:shaikhaslame0@gmail.com"><i class="fa fa-envelope mr-3"></i></a>shaikhaslame0@gmail.com</h6>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 py-3 text-right">
+			<span class="px-2">
+				<a href="https://www.facebook.com/profile.php?id=100013134098896"><img src="facebook.png"></a>
+			</span>
+			<span class="px-2">
+				<a href="https://www.instagram.com/aslamshaikh_official_2201/"><img src="instagram.png"></a>
+			</span>
+			<span class="px-2">
+				<a href="Https://wa.me/918104537679"><img src="whatsapp.png"></a>
+			</span>
+		</div>
+	</div>
+</section>		
+	<div class="modal fade" id="mymodel" tabindex="-1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Youre Host</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+		<div class="col-md-12 form-group">
+		<i class="fa fa-user"></i> <label>Username</label>
+		<input type="text" class="form-control mb-2" placeholder="Name">
+		<i class="fa fa-phone"></i> <label>Phone No.</label>
+		<input type="number" class="form-control mb-2" placeholder="Mobile No.">
+		<i class="fa fa-envelope"></i> <label>Email Address</label>
+		<input type="text" class="form-control mb-2" placeholder="Email Id">
+		<input type="file" class="form-control border-0">
+		</div>
+		</div>
+      </div>
+      <div class="modal-footer justify-content-left">
+        <button type="button" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+   
+  </body>
+</html>

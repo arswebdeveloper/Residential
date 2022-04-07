@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+    <title>Fisrt Website</title>
+	<style>
+	.txtarea {
+		border-right: 1px solid #ccc;
+		padding:0;
+	}
+	.txtarea .form-control{
+	    padding: 0 15px;
+		font-size: 12px;
+		border:0;
+		height: auto;
+	}
+	
+	.txtarea select{
+		background: url(arrow.png) 60px 7px no-repeat;
+		appearance:none;
+	}
+	#Location{
+	margin-right: 5px;
+	height: 38px;
+	}
+	
+	
+	</style>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-1">
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="projects.html">Our Projects</a>
+		<a href="Contactus.html">Contact Us</a>
+	</div>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	
+	<a class="navbar-brand" href="index.html">
+    <img src="logo.png"  alt="">
+  </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <nav class="navbar navbar-light">
+  <form class="form-inline">
+  
+   <select id="Location">
+              <option value="free">Thane</option>
+            <option value="free">Dombivli</option>
+            <option value="basic">Kalyan</option>
+            <option value="premium">Diva</option>
+			<option value="" disabled selected>Location</option>
+        </select>
+  
+  <!--<button class="btn btn-light border-r dropdown-toggle rounded-0" type="button" data-toggle="dropdown">Thane
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Dombivli</a></li>
+      <li><a href="#">Kalyan</a></li>
+      <li><a href="#">Thane</a></li>
+      <li class="divider"></li>
+      <li><a href="#"> Mumbra</a></li>
+    </ul>
+  <button class="btn btn-light dropdown-toggle rounded-0" type="button" data-toggle="dropdown">Buy
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">1 RK</a></li>
+      <li><a href="#">Kalyan</a></li>
+      <li><a href="#">Thane</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Mumbra</a></li>
+    </ul>
+	-->
+	
+	
+	
+	<select id="Location">
+            <option value="1 RK">1 RK</option>
+            <option value="1-2 BHK">1-2 BHK</option>
+            <option value="3 BHK">3 BHK</option>
+			<option value="Buy" disabled selected>Buy</option>
+        </select>
+		
+    <input class="form-control border-right-0 rounded-0" type="search" placeholder="Locality or Builder or Project Name" aria-label="Search">
+    <button class="btn btn-warning rounded-0 border-left-0 my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+  </form>
+</nav>
+      <div class="mt-2"><i class="fa fa-user-circle fa-2x"></i></div>
+	  <a href="c.html"<button type="button" class="btn btn-info rounded-0 mx-5">Post Property</button></a>
+	   <button class="btn btn-info rounded-0 btn-sm" data-target="#mymodel" data-toggle="modal">SIGN UP</button>
+    </ul>
+  </div>
+</nav>
+
+
+  <div class="container my-5">
+	<div class="mt-2">
+	
+	<form class="border p-3">
+	<div class="row">
+	<div class="col-md-3"><h5><strong>Create New Property List</strong></h5></div>
+	
+	<div class="col-md-7"></div>
+	<div class="col-md-2"><button style="border:1px solid #2cce9a;">View Text</button></div>
+	
+	<div class="col-md-12"><hr></div>
+	
+	<div class="col-md-12 form-group">
+	<label>Property Name</label>
+	<input type="text" class="form-control" required>
+	</div>
+	
+	<div class="col-md-4 form-group">
+	<label>Minimum Price</label>
+	<input type="text" class="form-control" required>
+	</div>
+	
+	<div class="col-md-4 form-group">
+	<label>Maximum Price</label>
+	<input type="text" class="form-control" required>
+	</div>
+	
+	<div class="col-md-4 form-group">
+	<label>Upload Photo<span style="color:red;">(Width: 725 * Height: 635)</span></label>
+      <input type="file" class="form-control" required>
+	  </div>
+	
+	<div class="col-md-3 form-group">
+	<label>Facebook Url</label>
+	<input type="text" class="form-control" required>
+	</div>
+	
+	<div class="col-md-3 form-group">
+	<label>Instagram Url</label>
+	<input type="text" class="form-control" required>
+	</div>
+	
+	<div class="col-md-3 form-group">
+	<label>Whatsapp No</label><input type="text" class="form-control" required>
+	</div>
+	
+	<div class="col-md-3 form-group">
+	<label>YouTube View Url</label>
+	<input type="text" class="form-control" required>
+	</div>
+	
+	<div class="col-md-3 form-group">
+	<label>Area in Sqft</label>
+	<input type="text" class="form-control" required>
+	</div>
+	
+	<div class="col-md-3 form-group">
+	<label>No. of Bedroom</label>
+	<input type="text" class="form-control" required>
+	</div>
+	
+	<div class="col-md-3 form-group">
+	<label>No of Bathroom</label>
+	<input type="text" class="form-control" required>
+	</div>
+	
+	<div class="col-md-3 form-group">
+	<label>Garage</label>
+	<input type="text" class="form-control" required>
+	</div>
+	
+	<div class="col-md-3 form-group">
+	<label>List Property For</label>
+		<select class="form-control">
+		<option>For Sale</option>
+		<option>Other</option>
+		</select>
+	</div>
+	
+	<div class="col-md-3 form-group">
+	<label>I have a</label>
+		<select class="form-control">
+		<option>Residential</option>
+		<option>Other</option>
+		</select>
+	</div>
+	
+	<div class="col-md-3 form-group">
+	<label>Property Type</label>
+		<select class="form-control">
+		<option>Apartment</option>
+		<option>Other</option>
+		</select>
+	</div>
+	<div class="col-md-3 form-group">
+	<label>Available For</label>
+		<select class="form-control">
+		<option>Resale</option>
+		<option>Other</option>
+		</select>
+	</div>
+	
+	<div class="col-md-12 form-group">
+	<label>Google Map Url</label>
+	<textarea name="address" class="form-control" cols="100" rows="5" placeholder="https://www.google.com/maps/embed? pb=!1m18!1m12!1m3!1d15073.651674041937!2d72.96674532830272!3d19.177159092477723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1 m2!1s0x3be7b8db87dc0033%3A0xf315b33e45611bb0!2sThane%20East%2C%20Thane%2C%20Maharashtra%20400603!5e0!3m2!1sen!2sin!4v 1612686788828!5m2!1sen!2sin" required></textarea>
+	</div>
+
+	<div class="col-md-12 form-group">
+	<label>Short Discription</label>
+	<input type="" class="form-control" placeholder="Apartment,Studio or Floor"required>
+	</div>
+	
+	<div class="col-md-12 form-group">
+		<label>Long Discription</label>
+		   <textarea name="editor1"></textarea>
+                <script>
+                        CKEDITOR.replace( 'editor1' );
+                </script>
+	</div>
+	
+	<div class="col-md-12 form-group">
+		<label>Near By Places</label>
+		  <textarea name="editor2"></textarea>
+                <script>
+                        CKEDITOR.replace( 'editor2' );
+                </script>
+	</div>
+	
+	</div>
+	<div>
+	
+		<div class="row">
+		<div class="col-md-4 form-group">
+		<label>Landmark</label>
+		<input type="text" class="form-control" required>
+		</div>
+		
+		<div class="col-md-4 form-group">
+		<label>City</label>
+		<input type="text" class="form-control" required>
+		</div>
+		
+		<div class="col-md-4 form-group">
+		<label>Pincode</label>
+		<input type="number" class="form-control" required>
+		</div>
+		
+		<div class="col-md-12 form-group">
+		<label>Full Address</label>
+		<textarea name="address" class="form-control" placeholder="address"></textarea>
+		</div>
+		
+		<div class="col-md-2 form-group">
+		<button style="border:1px solid blue;">Click Here To Post</button>
+		</div>
+		
+		<div class="col-md-12">
+			<hr>
+			
+			<p><label>Copyright &copy 2000-2024</label><a href="https://goo.gl/maps/NdAGeFRsf4VDDtBn7" style="color:blue; text-decoration:underline;">Almantasharealty.com</a><label>. All rights reserved.</label><span style="float:right;"><b>Version</b> 3.0.5</span></p>
+		</div>
+		
+	</div>
+	</div>
+	</form>
+	</div>
+</div>
+
+
+<section class="bg-dark text-white">
+	<div class="container-fluid pt-5">
+		<div class="row">
+			<div class="col-md-4 text-center border-right">
+				<img src="logo.png" class="w-50 my-3">
+				<h5>AL Mantasha Realty Brings Together a Team of Qualified Professionals in the Field of Management And Engineering.</h5>
+			</div>
+			<div class="col-md-4 border-right">
+				<div class='px-4'>
+					<h3 class="pb-3">Quick Links</h3>
+					<h5><a href="index.html">HOME</a></h5>
+					<h5><a href="About.html">About Us</a></h5>
+					<h5><a href="projects.html">Our Projects</a></h5>
+					<h5><a href="Contactus.html">Contact Us</a></h5>
+	
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class='px-3'>
+					<h3 class="pb-3">Keep In Touch</h3>
+					<h6 class="mb-3"><a href="https://goo.gl/maps/NdAGeFRsf4VDDtBn7"><i class="fa fa-location-arrow mr-3"></i></a>AL Mantasha Realty, Plot No. 102, At Kalsekar College Gate, Opposite Fatima Palace Building, Kausa, Mumbra Thane – 400612.</h6>
+					<h6 class="mb-3"><a href="tel:+918104537679"><i class="fa fa-phone mr-3"></i></a>+91 8104537679</h6>
+					<h6><a href="mailto:shaikhaslame0@gmail.com"><i class="fa fa-envelope mr-3"></i></a>shaikhaslame0@gmail.com</h6>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 py-3 text-right">
+			<span class="px-2">
+				<a href="https://www.facebook.com/profile.php?id=100013134098896"><img src="facebook.png"></a>
+			</span>
+			<span class="px-2">
+				<a href="https://www.instagram.com/aslamshaikh_official_2201/"><img src="instagram.png"></a>
+			</span>
+			<span class="px-2">
+				<a href="Https://wa.me/918104537679"><img src="whatsapp.png"></a>
+			</span>
+		</div>
+	</div>
+</section>	
+    
+	<div class="modal fade" id="mymodel" tabindex="-1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Youre Host</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+		<div class="col-md-12 form-group">
+		<i class="fa fa-user"></i> <label>Username</label>
+		<input type="text" class="form-control mb-2" placeholder="Name">
+		<i class="fa fa-phone"></i> <label>Phone No.</label>
+		<input type="number" class="form-control mb-2" placeholder="Mobile No.">
+		<i class="fa fa-envelope"></i> <label>Email Address</label>
+		<input type="text" class="form-control mb-2" placeholder="Email Id">
+		<input type="file" class="form-control border-0">
+		</div>
+		</div>
+      </div>
+      <div class="modal-footer justify-content-left">
+        <button type="button" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+  </body>
+</html>

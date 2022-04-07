@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	</head>
+	
+	<style>
+	#Location{
+	margin-right: 5px;
+	height: 38px;
+	}
+
+    h3 {text-align: center;
+	}
+
+	
+	
+	.head-container{
+	background-image: url('https://almantasharealty.com/wp-content/uploads/2020/03/About-us-1.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 70px 0;
+
+	}
+	
+	
+	
+	h1 {
+  text-align: center;
+}
+
+	.card-body{
+	overflow: hidden;}
+	
+	.image{
+	background-image: url(https://almantasharealty.com/wp-content/uploads/2020/03/Mountain-Valley.jpg);
+	overflow: hidden;
+	width:100%;
+	height:100%;
+  transition: .2s ease;
+	}
+	
+.card-body:hover .image {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.ovrlay{
+transform: scale(0);
+}
+
+.card-body:hover .ovrlay{
+transform: scale(1);
+transition: .2s ease;
+background-color: #EAEAEA;
+opacity: .4;
+color: #000000;
+}
+
+
+
+svg{
+width:15px;
+}
+
+
+</style>
+
+	
+	</style>
+  </head>
+  
+   <nav class="navbar navbar-expand-lg navbar-light bg-1">
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="about.html">About Us</a>
+		<a href="projects.html">Our Projects</a>
+		<a href="Contactus.html">Contact Us</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+	
+	<a class="navbar-brand" href="index.html">
+    <img src="logo.png"  alt="">
+  </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <nav class="navbar navbar-light">
+  <form class="form-inline">
+  <select id="Location">
+              <option value="thane">Thane</option>
+            <option value="free">Dombivli</option>
+            <option value="basic">Kalyan</option>
+            <option value="premium">Diva</option>
+			<option value="" disabled selected>Location</option>
+        </select>
+  
+  
+ 
+	<select id="Location">
+            <option value="1 RK">1 RK</option>
+            <option value="1-2 BHK">1-2 BHK</option>
+            <option value="3 BHK">3 BHK</option>
+			<option value="Buy" disabled selected>Buy</option>
+        </select>
+		
+    <input class="form-control border-right-0 rounded-0" type="search" placeholder="Locality or Builder or Project Name" aria-label="Search">
+    <button class="btn btn-warning rounded-0 border-left-0 my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+  </form>
+</nav>
+      <div class="mt-2"><i class="fa fa-user-circle fa-2x"></i></div>
+	  <a href="c.html"<button type="button" class="btn btn-info rounded-0 mx-5">Post Property</button></a>
+	   <button class="btn btn-info rounded-0 btn-sm" data-target="#mymodel" data-toggle="modal">SIGN UP</button>
+    </ul>
+  </div>
+</nav>
+<body>
+
+
+<div class="head-container">
+<div class="container my-5">
+<h1 class="text-white" style="font-size:60px;"><strong>Our Projects</strong></h1>
+</div>
+</div>
+
+
+<div class="container-fluid my-4 mb-5">
+	<div class="card-deck m-0">
+		<div class="card">
+		<div class="card-body p-0">
+			<img src="https://almantasharealty.com/wp-content/uploads/2020/03/Mountain-Valley.jpg" alt="Avatar" class="image card-img">
+			<div class="card-img-overlay ovrlay d-flex justify-content-center align-items-center">
+				<h6><strong>MOUNTAIN VALLEY</strong></h6>
+			</div>
+		</div>
+			<div class="card-footer text-center" style="background-color:white;">
+			<h5>MOUNTAIN VALLEY</h5>
+			</div>
+		</div>
+		
+		<div class="card">
+		<div class="card-body p-0">
+			<img src="https://almantasharealty.com/wp-content/uploads/2016/08/the-universe.jpg" alt="Avatar" class="image card-img">
+			<div class="card-img-overlay ovrlay d-flex justify-content-center align-items-center">
+				<h6><strong>THE UNIVERSE</strong></h6>
+			</div>
+		</div>
+			<div class="card-footer text-center" style="background-color:white;">
+			<h5>THE UNIVERSE</h5>
+			</div>
+		</div>
+		
+		<div class="card">
+		<div class="card-body p-0">
+			<img src="https://almantasharealty.com/wp-content/uploads/2016/08/vista-vally-2.jpg" alt="Avatar" class="image card-img">
+			<div class="card-img-overlay ovrlay d-flex justify-content-center align-items-center">
+				<h6>VISTA VALLEY<strong></strong></h6>
+			</div>
+		</div>
+			<div class="card-footer text-center" style="background-color:white;">
+			<h5>VISTA VALLEY</h5>
+			</div>
+		</div>
+		
+		<div class="card">
+		<div class="card-body p-0">
+			<img src="https://almantasharealty.com/wp-content/uploads/2016/08/the-heaven-palace-2.jpg" alt="Avatar" class="image card-img">
+			<div class="card-img-overlay ovrlay d-flex justify-content-center align-items-center">
+				<h6><strong>THE HEAVEN'S PALACE</strong></h6>
+			</div>
+		</div>
+			<div class="card-footer text-center" style="background-color:white;">
+			<h5>THE HEAVEN'S PALACE</h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row mb-5">
+<div class="col-md-6">
+<img src="about.jpg" class="d-block w-100">
+
+</div>
+<div class="col-md-6">
+<h2>Project Fatures</h2>
+<p class="my-2 mt-4"><span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></span>
+TMC Clearance</P>
+<p><span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></span>
+Ground + 2 story Shopping + 20 Stories Residential cum commercial Tower</P>
+<p><span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></span>
+Premium 1.28 3 BHK Modern Flats and shops</P>
+<p><span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></span>
+Kibla Compass Residence</P>
+<p><span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></span>
+Parking with Lifestyle features</P>
+<p><span class="mr-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/></svg></span>
+Podium Garden with playground equipment</P>
+
+
+
+
+
+
+</div>
+</div>
+
+  
+  <div class="overlay">
+    
+	
+	
+	<!--<div class="card" style="width: 90rem;">
+<div class="container ">
+
+<div class="row">
+
+<div class="col-md-6  d-flex align-items-center">
+  <img src="https://almantasharealty.com/wp-content/uploads/2020/03/Mountain-Valley.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"> The Universe</div>-->
+	
+
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<section class="bg-dark text-white">
+	<div class="container-fluid pt-5">
+		<div class="row">
+			<div class="col-md-4 text-center border-right">
+				<img src="logo.png" class="w-50 my-3">
+				<h5>AL Mantasha Realty Brings Together a Team of Qualified Professionals in the Field of Management And Engineering.</h5>
+			</div>
+			<div class="col-md-4 border-right">
+				<div class='px-4'>
+					<h3 class="pb-3">Quick Links</h3>
+					<h5><a href="index.html">HOME</a></h5>
+					<h5><a href="About.html">About Us</a></h5>
+					<h5><a href="projects.html">Our Projects</a></h5>
+					<h5><a href="Contactus.html">Contact Us</a></h5>
+	
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class='px-3'>
+					<h3 class="pb-3">Keep In Touch</h3>
+					<h6 class="mb-3"><a href="https://goo.gl/maps/NdAGeFRsf4VDDtBn7"><i class="fa fa-location-arrow mr-3"></i></a>AL Mantasha Realty, Plot No. 102, At Kalsekar College Gate, Opposite Fatima Palace Building, Kausa, Mumbra Thane – 400612.</h6>
+					<h6 class="mb-3"><a href="tel:+918104537679"><i class="fa fa-phone mr-3"></i></a>+91 8104537679</h6>
+					<h6><a href="mailto:shaikhaslame0@gmail.com"><i class="fa fa-envelope mr-3"></i></a>shaikhaslame0@gmail.com</h6>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 py-3 text-right">
+			<span class="px-2">
+				<a href="https://www.facebook.com/profile.php?id=100013134098896"><img src="facebook.png"></a>
+			</span>
+			<span class="px-2">
+				<a href="https://www.instagram.com/aslamshaikh_official_2201/"><img src="instagram.png"></a>
+			</span>
+			<span class="px-2">
+				<a href="Https://wa.me/918104537679"><img src="whatsapp.png"></a>
+			</span>
+		</div>
+	</div>
+</section>	
+	
+	<div class="modal fade" id="mymodel" tabindex="-1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Youre Host</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+		<div class="col-md-12 form-group">
+		<i class="fa fa-user"></i> <label>Username</label>
+		<input type="text" class="form-control mb-2" placeholder="Name">
+		<i class="fa fa-phone"></i> <label>Phone No.</label>
+		<input type="number" class="form-control mb-2" placeholder="Mobile No.">
+		<i class="fa fa-envelope"></i> <label>Email Address</label>
+		<input type="text" class="form-control mb-2" placeholder="Email Id">
+		<input type="file" class="form-control border-0">
+		</div>
+		</div>
+      </div>
+      <div class="modal-footer justify-content-left">
+        <button type="button" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+	
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+
+   
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

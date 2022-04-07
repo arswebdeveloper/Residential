@@ -1,0 +1,58 @@
+
+
+.sidenav {
+  display: none;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.bg-1{
+background-color:#0b0c0c;
+color:#fff;
+}
+.border-r{
+border-right:1px solid;
+}
+.imagside1{
+	background-image:url(https://www.jagrutidesigns.com/media/cache/living-room-gallery-landscape-design2_1200x800.jpg);
+	width:100%;
+	height:600px;
+	background-size:cover;
+}
+.imagside2{
+	background-image:url(https://mldllifespacebucket01.s3.amazonaws.com/2019/10/vicino-overview.jpg);
+	width:100%;
+	height:400x;
+	background-size:cover;
+}
